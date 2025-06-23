@@ -30,6 +30,10 @@
         
     }
 
+.new{
+  display: flex;
+  flex-direction: row;
+}
 
 .all{
     z-index: 2.0;
@@ -56,9 +60,10 @@
 }
 
  .all input {
+  
 padding: 20px;
 border: 1px solid black;
-width: 80%;
+width: 70%;
 max-width: 800px;
 margin-bottom: 10px;
 }
@@ -124,10 +129,16 @@ margin-top: 20px;
 }
 
 .flex {
-    display: flex;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   justify-content: space-between;
+  gap: 70px;
+  margin-top: 40px;
+    /* display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
-    gap: 20px;
+    gap: 20px; */
    
     
 }
@@ -186,7 +197,7 @@ margin-top: 20px;
 .herotext{
   text-align: left;
   max-width: 500px;
-    margin: 40px 60px;
+  margin: 20px 40px;
 }
 
 .herotext img {
@@ -207,10 +218,12 @@ margin-top: 20px;
 }
 
 .par {
+   word-wrap: normal;
+
   width: 663px;
   height: 72px;
   color: white;
-  font:  19px / 24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font:  19px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .bt { 
@@ -229,17 +242,19 @@ margin-top: 20px;
 
 .fiverr-pro {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   background: lightcyan;
   padding: 30px;
   border-radius: 22px;
 
-  flex-wrap: wrap;
+
 }
 
 .text-content {
   flex: 1;
+  flex-wrap: wrap;
   min-width: 300px;
   padding-right: 20px;
 }
@@ -255,8 +270,9 @@ h2 span {
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap ;
   gap: 25px;
   margin-top: 20px;
 }
