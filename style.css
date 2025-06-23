@@ -1,0 +1,609 @@
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: aliceblue;
+        align-items: center;
+        text-align: right;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+    .link  a{
+    margin: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: groove;
+        cursor: pointer;
+        
+    }
+
+
+.all{
+    z-index: 2.0;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 3px;
+    background: none;
+    height: 350px;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+
+
+ .all h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    color:white;
+    margin: 40px 40px;
+    
+}
+
+ .all input {
+padding: 20px;
+border: 1px solid black;
+width: 80%;
+max-width: 800px;
+margin-bottom: 10px;
+}
+
+
+
+
+.list{
+display: flex;
+gap: 10px;
+margin-top: 16px;
+margin-top: 20px;
+}
+
+.ht{
+
+   background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+ 
+}
+      
+ .trust {
+ 
+  text-align: left;
+  margin-top: 30px;
+  font-size: 15px;
+  color: white;     
+ }  
+
+ 
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.card {
+    
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: center;
+}
+
+ .img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+ p {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+   
+    
+}
+
+.ct {
+  background:darkgreen;
+  color: white;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+
+ 
+}
+.pic{
+
+     background-color: lightgreen;
+     padding: 8px;
+     border-radius: 10px;
+ 
+  
+}
+
+
+ pic img {
+    width: 100%;
+    border-radius: 8px;
+}
+ .p {
+
+    font-size: 19px;
+    margin-bottom: 10px;
+      padding: 10px;
+  font-size: 20px;
+  color:white;  
+
+
+}
+
+.hero{
+      background: linear-gradient(to right,  rgb(58, 3, 53), black, black);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-radius: 15px;
+      gap: 40px;
+      overflow: hidden;
+}
+    .herovideo video {
+     width: 550px;
+     height: 350px;
+     margin: 50px 60px;
+     align-items: left;
+     border-radius: 15px;
+}
+
+.herotext{
+  text-align: left;
+  max-width: 500px;
+    margin: 40px 60px;
+}
+
+.herotext img {
+  
+  margin-top: 20px;
+  
+ 
+}
+
+.herotext h2 {
+  margin-top: 10px;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+  width: 663pc;
+  height: 40px;
+  font: 40px powerGrotesk;
+}
+
+.par {
+  width: 663px;
+  height: 72px;
+  color: white;
+  font:  19px / 24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.bt { 
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color:black;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  font-size: bold;
+  font:  16px / 24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  
+}
+
+.fiverr-pro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: lightcyan;
+  padding: 30px;
+  border-radius: 22px;
+
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.text-content h2 {
+  margin-bottom: 10px;
+  
+  font-family: Arial, sans-serif;
+}
+
+h2 span {
+  color: green;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.feature {
+  padding-left: 25px;
+  position: relative;
+  width: 250px;
+}
+
+.feature::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+
+.feature h3 {
+  margin-bottom: 5px;
+}
+
+.but {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+ 
+}
+
+.image-content img {
+  margin-top: 50px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.hr{
+margin: 30px auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+.hr h1 {
+   margin-bottom: 10px;
+}
+
+.hr p {
+margin-bottom: 20px;
+font-size: 18px;
+color: #222;
+}
+
+.hr video {
+  width: 100% ;
+  max-width: 100%;
+  border-radius: 15px;
+}
+ 
+.grit{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+.cd2{
+  background: white;
+  box-shadow:0 2px 5px gray;
+  border-radius: 15px;
+  width: 244.5px;
+  height: 180px;
+  overflow: hidden;
+  text-align: center;
+}
+.cd2 p {
+  font-weight: bold;
+  font-size: medium;
+}
+.cd2 img{
+  margin: 10px 10px;
+   width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.gi{
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.b2{
+  text-align: center;
+  margin-top: 20px;
+ 
+}
+.b2 button{
+  padding: 10px 20px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  
+  
+  margin: 40px 20px 0 20px;
+}
+
+.container .git{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  gap: 20px;
+}
+.gallary{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+
+ 
+  border-radius: 10px;
+  }
+
+.gallary img{
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  height: auto;
+}
+.cd3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; /* 👈 Controls space between images */
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.guide-box {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.guide-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px; 
+}
+
+.guide-box p {
+  padding: 0 10px 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 36px;
+  }
+
+  .guide-box p {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+ 
+
+.last{
+  width: 100%;
+  margin: auto;
+  background-color: #4d1727;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.last h1{
+  margin: 0;
+  line-height: 1.5;
+  color: white;
+  font-size: 80px;
+  
+}
+.last h1 span{
+  color: orangered;
+}
+
+ .b3{
+  text-align: center;
+ }
+
+.last button{
+  bottom: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footer h5{
+    margin: 50px;
+    font-size: 16px;
+}
+.footer ul {
+    list-style: none;
+    font-size: 14px;
+}
+.footer li {
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .link a {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .all{
+    width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .herovideo video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .herotext {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .grid, .grit, .gi {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  .container {
+    margin: 20px 10px 0 10px;
+  }
+
+  .gallary {
+    width: 100%;
+  }
+
+  .last h1 {
+    font-size: 40px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .link a {
+    margin: 15px 10px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .herovideo video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .herotext {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .grid, .grit, .gi {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .gallary {
+    width: 48%;
+  }
+}

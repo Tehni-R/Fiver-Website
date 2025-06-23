@@ -4,868 +4,436 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        background-color: aliceblue;
-        align-items: center;
-        text-align: right;
-    }
-
-    .logo {
-        font-size: 50px;
-    }
-    .link  a{
-    margin: 20px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: black;
-
-    }
-
-    button {
-        font-size: 16px;
-        font-weight: bold;
-        background-color: white;
-        color: black;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: groove;
-        cursor: pointer;
-        
-    }
-
-.all{
-    z-index: 0.2;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    
-    background-size: cover;
-    height: 350px;
-    padding: 100px 20px;
-    overflow: hidden;
-}
-
-
-
-h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color:#222;
-}
-
-input {
-padding: 20px;
-border: 1px solid black;
-width: 80%;
-max-width: 800px;
-margin-bottom: 10px;
-
-}
-
-
-
-
-.list{
-    display: flex;
-   gap: 10px;
-    margin-top: 16px;
-  
-    margin-top: 20px;
-    
-}
-.ht{
-
- background-color:#091727; 
-  color: white;
-  padding: 10px 20px;
-  width: 30%;
-  max-width: 300px;
-  border: none;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-      
- .trust {
- 
-  text-align: left;
-  margin-top: 15px;
-  font-weight: bold;
-  color: black;     
- }  
- 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px;
-  margin-top: 40px;
-}
-
-.card {
-    
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px #ccc;
-  text-align: center;
-}
-
- .img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
- p {
-  padding: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 20px;
-   
-    
-}
-
-.ct {
-  background:darkgreen;
-  color: white;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-
- 
-}
-.pic{
-
-     background-color: lightgreen;
-     padding: 8px;
-     border-radius: 10px;
- 
-  
-}
-
-
- pic img {
-    width: 100%;
-    border-radius: 8px;
-}
- .p {
-
-    font-size: 19px;
-    margin-bottom: 10px;
-      padding: 10px;
-  font-size: 20px;
-  color:white;  
-
-
-}
-
-.hero{
-      background: linear-gradient(to right,  rgb(58, 3, 53), black, black);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      border-radius: 15px;
-      gap: 40px;
-      overflow: hidden;
-}
-    .herovideo video {
-     width: 550px;
-     height: 350px;
-     margin: 50px 60px;
-     align-items: left;
-     border-radius: 15px;
-}
-
-.herotext{
-  text-align: left;
-  max-width: 500px;
-    margin: 40px 60px;
-}
-
-.herotext img {
-  
-  margin-top: 20px;
-  
- 
-}
-
-.herotext h2 {
-  margin-top: 10px;
-  color: white;
-  font-size: 40px;
-  margin-bottom: 10px;
-  width: 663pc;
-  height: 40px;
-  font: 40px powerGrotesk;
-}
-
-.par {
-  width: 663px;
-  height: 72px;
-  color: white;
-  font:  19px / 24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-.bt { 
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color:black;
-  border-radius: 15px;
-  border: none;
-  font-size: 16px;
-  font-size: bold;
-  font:  16px / 24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  
-}
-
-.fiverr-pro {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background: lightcyan;
-  padding: 30px;
-  border-radius: 22px;
-
-  flex-wrap: wrap;
-}
-
-.text-content {
-  flex: 1;
-  min-width: 300px;
-  padding-right: 20px;
-}
-
-.text-content h2 {
-  margin-bottom: 10px;
-  
-  font-family: Arial, sans-serif;
-}
-
-h2 span {
-  color: green;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-top: 20px;
-}
-
-.feature {
-  padding-left: 25px;
-  position: relative;
-  width: 250px;
-}
-
-.feature::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: green;
-  font-weight: bold;
-}
-
-.feature h3 {
-  margin-bottom: 5px;
-}
-
-.but {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.image-content {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
- 
-}
-
-.image-content img {
-  margin-top: 50px;
-  border-radius: 10px;
-  max-width: 100%;
-  height: auto;
-}
-.hr h2{
-  font-size: 20px;
-}
-.hr p {
-  font-size: 20px;
-  color: #222;
-}
-
-.hr video {
-  width: 100% ;
-  background: none;
-  border-radius: 50px;
-}
- 
-.grit{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 40px;
-}
-.cd2{
-  background: white;
-  box-shadow:0 2px 5px gray;
-  border-radius: 15px;
-  width: 244.5px;
-  height: 180px;
-  overflow: hidden;
-  text-align: center;
-}
-.cd2 p {
-  font-weight: bold;
-  font-size: medium;
-}
-.cd2 img{
-  margin: 10px 10px;
-   width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-.gi{
-   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 40px;
-}
-
-.b2{
-  text-align: center;
-  margin-top: 20px;
- 
-}
-.b2 button{
-  padding: 10px 20px;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.git{
- display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 20px;
-}
-.gallary{
- 
-  text-align: center;
-  border-radius: 10px;
-  }
-
-.gallary img{
-  width: 100%;
-  border-radius: 10px;
-  height: auto;
-}
-.cd3{
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 20px;
-  
-}
-
- .cd3 p{
-   font-size: 20px;
-  color: #222;
-}
-.last{
-  width: 100%;
-  margin: auto;
-  background-color: #4d1727;
-  border-radius: 20px;
-  position: relative;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.last h1{
-  margin: 0;
-  line-height: 1.5;
-  color: white;
-  font-size: 80px;
-  
-}
-.last h1 span{
-  color: orangered;
-}
-
- .b3{
-  text-align: center;
- }
-
-.last button{
-  bottom: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: #222;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
- 
-}
-
-
- </style>
+</style>
 <body>
 
-    <div class="navbar">
-        <div class="logo">
-            <img src="https://i.ibb.co/Xr2BrG14/1656737178fiverr-logo-png-removebg-preview.png" width="120px" height="40px" alt="logo">
-        </div>
-        <div class="link">
-           <a href="#">Flverr Pro</a>
-              <a href="#">Explore</a>
-                <a href="#"><i class="fa-solid fa-globe"></i>EN</a>
-                  <a href="#">Become a Seller</a>
-                    <a href="#">Flverr Go</a>
-                      <a href="#">Sign In</a>
+<div class="navbar">
+<div class="logo">
+<img src="https://i.ibb.co/Xr2BrG14/1656737178fiverr-logo-png-removebg-preview.png" width="120px" height="40px" alt="logo">
+</div>
+<div class="link">
+  <a href="#">Flverr Pro</a>
+  <a href="#">Explore</a>
+  <a href="#"><i class="fa-solid fa-globe"></i>EN</a>
+  <a href="#">Become a Seller</a>
+  <a href="#">Flverr Go</a>
+  <a href="#">Sign In</a>
 
-           <button>JION</button>           
-        </div>
+  <button>JION</button>           
+</div>
      
-    </div>
+</div>
 
-    <div>
- <video  controls loop
- src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-attachments/generic_asset/asset/4934b0c8f6441211d97f83585a7c9c00-1722433273322/Vontelle%20Cutdown-%20Breakthrough%20V5"
- width="1340px" height="600px"></video>
+<div>
+ <video  controls loop 
+ src="https://fiverr-res.cloudinary.com/video/upload/v1/video-attachments/generic_asset/asset/18ad23debdc5ce914d67939eceb5fc27-1738830703211/Desktop%20Header%20new%20version"
+ width="100%" height="600px"></video>
 <div class="all">
 
-    <div >
-         <h1>Our freelancers <br> will take it from here</h1>
-         <input type="text" placeholder="Search for any service...">
-   </div>
 
+<h1 >Our freelancers <br> will take it from here</h1>
+<input type="text" placeholder="Search for any service...">
 
+<div class="list">
+<button class="ht">web development</button>
+<button class="ht">architecture and interior design</button>
+<button class="ht">UGC videos</button>
+<button class="ht">video editing</button>
+</div>
 
-        <div class="list">
-        <button class="ht">web development</button>
-        <button class="ht">architecture and interior design</button>
-        <button class="ht">UGC videos</button>
-        <button class="ht">video editing</button>
-        </div>
+<div class="trust">
+<h2>Trusted by:     GOOGLE   , META ,  NETFLIX  ,  P&G  ,  PayPAl  ,  Payoneer</h2>
+</div>
 
-        <div class="trust">
-            <h2>Trusted by:     GOOGLE   , META ,  NETFLIX  ,  P&G  ,  PayPAl  ,  Payoneer</h2>
-          </div>
-        </div>
-
-    </div>
-  
+</div>
 </div>
     
 
 <div class="grid">
-    <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/programming-tech-thin.56382a2.svg" alt="programming_tech">
-        <p> Programming & Tech</p>
-    </div>
 
+<div class="card">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/programming-tech-thin.56382a2.svg" alt="programming_tech">
+<p> Programming & Tech</p>
+</div>
+
+<div class="card">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/graphics-design-thin.ff38893.svg" alt="graphics_design">
+<p>Graphics & design</p>
+</div>
+
+<div class="card">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/digital-marketing-thin.68edb44.svg" alt="digital_marketing">
+<p> Digital Marketing</p>
+</div>
+
+<div class="card">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/writing-translation-thin.fd3699b.svg" alt="writing_translation">
+<p>Writing & Translation</p>
+</div>
+
+<div class="card">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/video-animation-thin.9d3f24d.svg" alt="video_animation">
+<p> Video & Animation</p>
+</div>
+
+<div class="card">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/ai-services-thin.104f389.svg" alt="ai_services">
+<p> AI Service</p>
+</div>
     
 <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/graphics-design-thin.ff38893.svg" alt="graphics_design">
-        <p>Graphics & design</p>
-    </div>
-
-
-
-    <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/digital-marketing-thin.68edb44.svg" alt="digital_marketing">
-        <p> Digital Marketing</p>
-    </div>
-
-
-
-
-    <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/writing-translation-thin.fd3699b.svg" alt="writing_translation">
-        <p>Writing & Translation</p>
-    </div>
-
-
-
-
-    <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/video-animation-thin.9d3f24d.svg" alt="video_animation">
-        <p> Video & Animation</p>
-    </div>
-
-    <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/ai-services-thin.104f389.svg" alt="ai_services">
-        <p> AI Service</p>
-    </div>
-    
-
-
-
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/music-audio-thin.43a9801.svg" alt="music_audio">
+<p>Music & Audio</p>
+</div>
 
 <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/music-audio-thin.43a9801.svg" alt="music_audio">
-        <p>Music & Audio</p>
-    </div>
-
-
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/business-thin.885e68e.svg" alt="business">
+<p>business</p>
+</div>
 
 <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/business-thin.885e68e.svg" alt="business">
-        <p>business</p>
-    </div>
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/consulting-thin.d5547ff.svg" alt="consulting">
+<p>Consulting</p>
+</div>
 
-
-    <div class="card">
-       
-        <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/consulting-thin.d5547ff.svg" alt="consulting">
-        <p>Consulting</p>
-    </div>
-
-    </div>
+</div>
 
 <br><br>
-<h1>Popular Service</h1>
+<h1 style="font-size: 50px;">Popular Service</h1>
 
-    <div  class="flex">
+<div  class="flex">
        
-        <div class="ct">
-         <h3 class="p">Website<br>Development</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156477/website-development.png" alt=" website development">
-        </div>
+<div class="ct">
+<h3 class="p">Website<br>Development</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156477/website-development.png" alt=" website development">
+</div>
 
-        <div class="ct">
-         <h3 class="p">Video<br>Editing</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156494/video-editing.png" alt=" video editing">
-        </div>
+<div class="ct">
+<h3 class="p">Video<br>Editing</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156494/video-editing.png" alt=" video editing">
+</div>
 
-        <div class="ct">
-         <h3 class="p">Software<br>development</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156476/software-development.png" alt="Software development">
-        </div>
+<div class="ct">
+<h3 class="p">Software<br>development</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156476/software-development.png" alt="Software development">
+</div>
 
-        <div class="ct">
-         <h4 class="p">SEO-Search Engine <br> Optimization</h4>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156488/seo.png"  alt="SEO">
-        </div>
+<div class="ct">
+<h4 class="p">SEO-Search Engine <br> Optimization</h4>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156488/seo.png"  alt="SEO">
+</div>
 
-         <div class="ct">
-         <h3 class="p">Architecture &<br>Interior Designer</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156473/architecture-design.png"  alt="Architecture">
-        </div>
+<div class="ct">
+<h3 class="p">Architecture &<br>Interior Designer</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156473/architecture-design.png"  alt="Architecture">
+</div>
    
-        <div class="ct">
-         <h4 class="p">website<br>development</h4>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/af48c6702af221956ea7adf0055854e6-1745826082297/Book%20Design.png" alt="book design">
-        </div>
+<div class="ct">
+<h4 class="p">website<br>development</h4>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/af48c6702af221956ea7adf0055854e6-1745826082297/Book%20Design.png" alt="book design">
+</div>
 
-        <div class="ct">
-         <h3 class="p">Book<br>design</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156477/website-development.png" alt="Bookdesign">
-        </div>
+<div class="ct">
+<h3 class="p">Book<br>design</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156477/website-development.png" alt="Bookdesign">
+</div>
 
-        <div class="ct">
-         <h3 class="p">UGC<br>Videos</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/ece24f7f595e2dd44b26567705d1c600-1728279781879/UGC%20Video%20img.png"  alt="UGCVideos">
-        </div>
+<div class="ct">
+<h3 class="p">UGC<br>Videos</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/ece24f7f595e2dd44b26567705d1c600-1728279781879/UGC%20Video%20img.png"  alt="UGCVideos">
+</div>
 
-        <div class="ct">
-         <h3 class="p">Vioces<br>Over</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156479/voice-over.png"  alt="ViocesOver">
-        </div>
+<div class="ct">
+<h3 class="p">Vioces<br>Over</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156479/voice-over.png"  alt="ViocesOver">
+</div>
 
-        <div class="ct">
-         <h3 class="p">Social Media<br>Marketing</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156476/social-media-marketing.png"  alt="SocialMediaMarketing">
-        </div>
+<div class="ct">
+<h3 class="p">Social Media<br>Marketing</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156476/social-media-marketing.png"  alt="SocialMediaMarketing">
+</div>
 
-        <div class="ct">
-         <h3 class="p">AI<br>development</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/4d23a927c9a0acf93aac6642714de09f-1745826013295/AI%20Development.png"  alt="AIdevelopment">
-        </div>
+<div class="ct">
+<h3 class="p">AI<br>development</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/4d23a927c9a0acf93aac6642714de09f-1745826013295/AI%20Development.png"  alt="AIdevelopment">
+</div>
 
-        <div class="ct">
-         <h3 class="p">LOGO<br>design</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156494/logo-design.png"   alt="OGOdesign">
-        </div>
+<div class="ct">
+<h3 class="p">LOGO<br>design</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/798403f5b92b1b5af997acc704a3d21c-1702465156494/logo-design.png"   alt="OGOdesign">
+</div>
 
-        <div class="ct">
-         <h3 class="p">Website<br>design</h3>
-         <img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/9d03d60a4fbbbed75ac139f57819ab74-1745826123751/Website%20Design.png"   alt="Websitedesign">
-        </div>
+<div class="ct">
+<h3 class="p">Website<br>design</h3>
+<img class="pic" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_188,dpr_1.0/v1/attachments/generic_asset/asset/9d03d60a4fbbbed75ac139f57819ab74-1745826123751/Website%20Design.png"   alt="Websitedesign">
+</div>
      
-    </div> 
+</div> 
 
 <br><br>
-
 
 <div class="hero">
-
-   
-        <div class="herotext">
-          <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/75863b216a8f2a5aecef1b52900daa97-1743602773855/Fiverr%20Go%20logo.png" width="120px" height="30.11px" alt="go">
-   
-            <h2>Instant results.</h2>
-            <h2> Top talent.</h2>
-            <p class="par
-            ">Get what you need  from freelancers who trained their own <br> personal AI Creation Models. Now you can browse, prompt, and generate <br> instantly. And if you need a tweak or change, the freelancer is always <br> there to help you perfect it.</p>
-            <button class="bt">Get Started</button>
-        </div>
-        
-      
-        
- <div class="herovideo"><video controls loop src="https://fiverr-res.cloudinary.com/video/upload/v1/video-attachments/generic_asset/asset/f4b1924c68e6916c6d100527c7ff3d9c-1743494584325/Image%20model"
-        width="472px" height="314px"></video></div>
-        
-        
+<div class="herotext">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/75863b216a8f2a5aecef1b52900daa97-1743602773855/Fiverr%20Go%20logo.png" width="120px" height="30.11px" alt="go">
+<h2>Instant results.</h2>
+<h2> Top talent.</h2>
+<p class="par">Get what you need  from freelancers who trained their own <br> personal AI Creation Models. Now you can browse, prompt, and generate <br> instantly. And if you need a tweak or change, the freelancer is always <br> there to help you perfect it.</p>
+<button class="bt">Get Started</button>
+</div>
+<div class="herovideo"><video controls loop src="https://fiverr-res.cloudinary.com/video/upload/v1/video-attachments/generic_asset/asset/f4b1924c68e6916c6d100527c7ff3d9c-1743494584325/Image%20model"
+width="472px" height="314px"></video></div>
 </div>
 
 <br><br>
 
 <div class="fiverr-pro">
-    
-   
-    <div class="text-content">
-       <img src="https://static.wixstatic.com/media/d7f5d6_5e176ba1593942599b366520e35b2326~mv2.png/v1/fill/w_980,h_239,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d7f5d6_5e176ba1593942599b366520e35b2326~mv2.png" 
-        width="139px" height="34px" alt="pro">
-      <h2>The <span>premium</span> freelance solution for businesses</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Dedicated hiring experts</h3>
-        <p>Count on an account manager to find you the right talent and see to your project’s every need.</p>
-      </div>
-
-      <div class="feature">
-        <h3>Satisfaction guarantee</h3>
-        <p>Order confidently, with guaranteed refunds for less-than-satisfactory deliveries.</p>
-      </div>
-
-      <div class="feature">
-        <h3>Advanced management tools</h3>
-        <p>Seamlessly integrate freelancers into your team and projects.</p>
-      </div>
-
-      <div class="feature">
-        <h3>Flexible payment models</h3>
-        <p>Pay per project or opt for hourly rates to facilitate longer-term collaboration.</p>
-      </div>
- </div>
-      <button class="but">Try now</button>
+<div class="text-content">
+<img src="https://static.wixstatic.com/media/d7f5d6_5e176ba1593942599b366520e35b2326~mv2.png/v1/fill/w_980,h_239,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d7f5d6_5e176ba1593942599b366520e35b2326~mv2.png" 
+width="139px" height="34px" alt="pro">
+<h2>The <span>premium</span> freelance solution for businesses</h2>
+<div class="features">
+<div class="feature">
+<h3>Dedicated hiring experts</h3>
+<p>Count on an account manager to find you the right talent and see to your project’s every need.</p>
 </div>
 
-      <div class="image-content">
-      <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/2321104e0c585cceea525419551d3a7c-1721984733481/fiverr-pro.png"
-    width="700px" height="500px" alt="im">
-   </div>
+<div class="feature">
+<h3>Satisfaction guarantee</h3>
+<p>Order confidently, with guaranteed refunds for less-than-satisfactory deliveries.</p>
+</div>
 
-    </div>
+<div class="feature">
+<h3>Advanced management tools</h3>
+<p>Seamlessly integrate freelancers into your team and projects.</p>
+</div>
+
+<div class="feature">
+<h3>Flexible payment models</h3>
+<p>Pay per project or opt for hourly rates to facilitate longer-term collaboration.</p>
+</div>
+</div>
+<button class="but">Try now</button>
+</div>
+
+<div class="image-content">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/2321104e0c585cceea525419551d3a7c-1721984733481/fiverr-pro.png"
+width="700px" height="500px" alt="im"></div>
+
+</div>
     
-    
- <br><br>
+<br><br>
 
-    <div class="hr">
-      <h1>What success on Fiverr looks like</h1>
-      <p >Vontélle Eyewear turns to Fiverr freelancers to bring their vision to life.</p>
-      <video loop controls autoplay src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-attachments/generic_asset/asset/4934b0c8f6441211d97f83585a7c9c00-1722433273322/Vontelle%20Cutdown-%20Breakthrough%20V5" ></video>
-    </div>
+<div class="hr">
+<h1 style="font-size: 50px;">What success on Fiverr looks like</h1>
+<p >Vontélle Eyewear turns to Fiverr freelancers to bring their vision to life.</p>
+<video loop controls autoplay src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-attachments/generic_asset/asset/4934b0c8f6441211d97f83585a7c9c00-1722433273322/Vontelle%20Cutdown-%20Breakthrough%20V5" ></video>
+</div>
 
-    <br><br>
-     <div>
-      <h1 style="font-size: 29px; color: #333;">Vontélle’s trusted services</h1>
-    <div class="grit">
-      <div class="cd2">
-        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666557/3D-Industrial-Design_2x.png" alt="Industrial">
-        <p>3D Industrial design</p>
-      </div>
+<br><br>
 
-      <div class="cd2">
-        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666565/E-commerce-Website-Development_2x.png" alt="E">
-        <p>E-commerce <br> website-development</p>
-      </div>
+<div>
+<h1 style="font-size: 29px; color: #333;">Vontélle’s trusted services</h1>
+<div class="grit">
+<div class="cd2">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666557/3D-Industrial-Design_2x.png" alt="Industrial">
+<p>3D Industrial design</p>
+</div>
 
-      <div class="cd2">
-        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666560/Email-Marketing_2x.png" alt="email">
-        <p>E-mail Marketing</p>
-      </div>
+<div class="cd2">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666565/E-commerce-Website-Development_2x.png" alt="E">
+<p>E-commerce <br> website-development</p>
+</div>
 
-      <div class="cd2">
-        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666567/Press-Releases_2x.png" alt="press">
-        <p>Press-Releases</p>
-      </div>
+<div class="cd2">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666560/Email-Marketing_2x.png" alt="email">
+<p>E-mail Marketing</p>
+</div>
 
-      <div class="cd2">
-        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666561/Logo-Design_2x.png" alt="logo">
-        <p>logo-design</p>
-      </div>
-    </div>
- </div>  
+<div class="cd2">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666567/Press-Releases_2x.png" alt="press">
+<p>Press-Releases</p>
+</div>
+
+<div class="cd2">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_80,dpr_1.0/v1/attachments/generic_asset/asset/818fbc450c6b7f14664e7d15584f008b-1722417666561/Logo-Design_2x.png" alt="logo">
+<p>logo-design</p>
+</div>
+</div>
+</div>  
  
   <br><br>
-<h1>Make it all happen with freelancers</h1>
- <div class="gi">
+
+<h1 style="font-size: 50px;">Make it all happen with freelancers</h1>
+<div class="gi">
   
-  <div class="gr">
-    <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/categories.8badf97.svg" alt="A">
-    <p>Access a pool of top talent <br>across 700 categories</p>
-  </div>
-
-  <div class="gr">
-    <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/matching.0eef7cc.svg" alt="B">
-    <p>Enjoy a simple, easy-to-use <br> matching experience</p>
-  </div>
-
-  <div class="gr">
-    <img src="	https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/quickly.6879514.svg" alt="C">
-    <p>Get quality work done quickly <br> and within budget</p>
-  </div>
+<div class="gr">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/categories.8badf97.svg" alt="A">
+<p>Access a pool of top talent <br>across 700 categories</p>
+</div>
 
 <div class="gr">
-    <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/happy.42ed7bd.svg" alt="">
-    <p>Only pay when you’re happy</p>
-  </div>
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/matching.0eef7cc.svg" alt="B">
+<p>Enjoy a simple, easy-to-use <br> matching experience</p>
+</div>
+
+<div class="gr">
+<img src="	https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/quickly.6879514.svg" alt="C">
+<p>Get quality work done quickly <br> and within budget</p>
+</div>
+
+<div class="gr">
+<img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/happy.42ed7bd.svg" alt="">
+<p>Only pay when you’re happy</p>
+</div>
 </div>  
-      <div class="b2"><button >Join now</button></div>
+<div class="b2"><button >Join now</button></div>
 
   <br><br>
 
-  <h1>Made on Fiverr</h1>
+<div class="container">
+<h1 style="font-size: 50px;">Made on Fiverr</h1>
 <div class="git">
-  <div class="gallary">
-     <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/8e573c38c01f1c92dbd16a7c499af099-1746456412/F_1.jpg" width="294px" height="245.39px" alt="">
-  </div>
-
-  <div class="gallary">
-    <img src= "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b0c67b92a7ef697eada4b00e81cee4b8-1746608364/GIG%20review.png" width="294px" height="153.66px" alt="">
-  </div>
-
-  <div class="gallary">
-    <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/25adaa30a6cf3529ba5de4933a243b52-1746588578/mockup1.jpg" width="325.5px" height="211.78px" alt="">
-  </div>
-
-  <div class="gallary">
-    <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/e68f7f0b882cf2e2c0bd663f5842c669-1745844454/2025-04-28%20QY%20Fotis%20Gaze%205%20view%20IN_V04_FIX1.jpg" width="294px" height="191.28" alt="">
-  </div>
-  
-  <div  class="gallary">
-    <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/4001dc6d3bc448b2ebdaadd233dc9f6e-1746265210/LISA%20HILDEBRANT_INTERIOR_LIVING_HR_FINAL.jpg" width="294px" height="196" alt="">
-  </div>
-
-  <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b1128b17beff4e7dabfe8ba41b75fa41-1745559436/IMG_7140.jpeg" width="325.5px" height="199.63px" alt="">
-  </div> 
 
 <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/be0e28849d80904c6ee0883922772390-1746699824/Mockup%20copy.jpg" width="325.5px" height="243.91px" alt="">
-  </div>
-
-  <div class="gallary">
-   <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/ab4ff21f481dd694e39d66b620a9f940-1746012415/Wedding%20no%20word.png" width="325.5px" height="460.03px" alt="">
-  </div>
-
-  <div class="gallary">
-   <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/eeae474aac512018f2c9ac92d1b2eaa8-1746453927/EAC3AAD8-E0A3-4CB3-87B6-78A947F6B80C.jpeg" width="325.5px" height="392.33px" alt="">
-  </div>
-
-  <div class="gallary">
-   <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b7a1a137b6dd1a3e215ce411cb2d08d2-1744832440/Autometera%20logo%20version%207-01.jpg" width="325.5px" height="218.73px" alt="">
-  </div>
-
-  <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b02e3ead4c2d44a36709d4a45bbaedf2-1745248349/1_Interactive%20LightMix.jpg" width="325.5px" height="191.81px" alt="">
-  </div>
-
-  <div class="gallary">
- <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/54d91985a7123ba4fdfff8e502453871-1745328656/tupp.png" width="325.5px" height="325.5px" alt="">
-  </div>
-
-  <div class="gallary">
- <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/7e79213924712f496ce676bcc314033e-1745020061/Enscape_2025-04-17-14-17-33.png" width="325.5px" height="176.2px" alt="">
-  </div>
-
-  <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/c27fb2b6817a699bfdc316ad342c6449-1745672501/1.jpeg" width="325.5px" height="243.91px" alt="">
-  </div>
-
-  <div class="gallary">
- <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/1b69d4df816b3e926c8ea2487c4541ba-1745023698/App%20mockup.png" width="325.5px" height="243.91px" alt="">
-  </div>
-
-  <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/2e972cf37a9f2667e4547aa2eba74af5-1745255512/Revision%202.png" width="325.5px" height="429.66px" alt="">
-  </div>
-
-  <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/d1a6f869830256edfbd3d2c7b887659b-1745375528/JAKEREID687.jpg" width="325.5px" height="500px" alt="">
-  </div>
-
-  <div class="gallary">
-  <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/3f84c777c368d1d1c1e915c64b4be699-1743961468/2025-03-31%20QY%20bethyl%201%20view%20restaurant_View06_fix01.jpg" width="325.5px" height="217px" alt="">
-  </div>
-
-  
-  
-
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/8e573c38c01f1c92dbd16a7c499af099-1746456412/F_1.jpg" width="294px" height="245.39px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b0c67b92a7ef697eada4b00e81cee4b8-1746608364/GIG%20review.png" width="294px" height="153.66px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/25adaa30a6cf3529ba5de4933a243b52-1746588578/mockup1.jpg" width="325.5px" height="211.78px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/e68f7f0b882cf2e2c0bd663f5842c669-1745844454/2025-04-28%20QY%20Fotis%20Gaze%205%20view%20IN_V04_FIX1.jpg" width="294px" height="191.28" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/3e67caf082731fbc4256d05a437e0a78-1743958431/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg" width="329.3px" height="185.28px" alt="">
 </div>
 
-   <br><br>
- <h1 style="font-size: 60px;">Guides to help you grow</h1>
- <div class="cd3">
-  <div>
-    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/0c7c1b07050e6ea2a0901861b48b6264-1658846941284/side%20hustle.jpeg" width="400px" height="300px" alt="a">
-    <p>Start a side business</p>
-  </div>
+<div class="gallary">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/4001dc6d3bc448b2ebdaadd233dc9f6e-1746265210/LISA%20HILDEBRANT_INTERIOR_LIVING_HR_FINAL.jpg" width="294px" height="196" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b1128b17beff4e7dabfe8ba41b75fa41-1745559436/IMG_7140.jpeg" width="325.5px" height="199.63px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/be0e28849d80904c6ee0883922772390-1746699824/Mockup%20copy.jpg" width="325.5px" height="243.91px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/ab4ff21f481dd694e39d66b620a9f940-1746012415/Wedding%20no%20word.png" width="325.5px" height="460.03px" alt="">
+</div>
+ 
+<div class="gallary">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/eeae474aac512018f2c9ac92d1b2eaa8-1746453927/EAC3AAD8-E0A3-4CB3-87B6-78A947F6B80C.jpeg" width="325.5px" height="392.33px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b7a1a137b6dd1a3e215ce411cb2d08d2-1744832440/Autometera%20logo%20version%207-01.jpg" width="325.5px" height="218.73px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/b02e3ead4c2d44a36709d4a45bbaedf2-1745248349/1_Interactive%20LightMix.jpg" width="325.5px" height="191.81px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/54d91985a7123ba4fdfff8e502453871-1745328656/tupp.png" width="325.5px" height="325.5px" alt="">
+</div>
 
-  <div cd3>
-    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/687d698a96f4eef875648319685ffeed-1687027332007/1685561103924-12profitableecommercebusinessideasyoucanstarttoday.jpg" width="400px" height="300px"alt="b">
-    <p>Ecommerce business Ideas</p>
-  </div>
+<div class="gallary">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/7e79213924712f496ce676bcc314033e-1745020061/Enscape_2025-04-17-14-17-33.png" width="325.5px" height="176.2px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/c27fb2b6817a699bfdc316ad342c6449-1745672501/1.jpeg" width="325.5px" height="243.91px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/1b69d4df816b3e926c8ea2487c4541ba-1745023698/App%20mockup.png" width="325.5px" height="243.91px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/2e972cf37a9f2667e4547aa2eba74af5-1745255512/Revision%202.png" width="325.5px" height="429.66px" alt="">
+</div>
 
-  <div cd3>
-    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/5907f56b0e099c84efe5f480840f43a2-1593446948907/home%20based%20online%20business-fiverr.jpg"width="400px" height="300px" alt="c">
-    <p>Start an online business and work from home</p>
-  </div>
+<div class="gallary">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/d1a6f869830256edfbd3d2c7b887659b-1745375528/JAKEREID687.jpg" width="325.5px" height="500px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/3f84c777c368d1d1c1e915c64b4be699-1743961468/2025-03-31%20QY%20bethyl%201%20view%20restaurant_View06_fix01.jpg" width="325.5px" height="217px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/3e277f9217d70c122e81eab9957211bd-1744065456/Scene%201_upscale01.jpg" width="329.3px" height="197.53px" alt="">
+<img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_delivery_web_tile/v1/attachments/delivery/asset/79ba5542a8477fd7d1a582043502538c-1744730518/17%20greatday2day-JPG2rev.jpg" width="329.3px" height="246.75px" alt="">
+</div>
 
-  <div cd3>
-    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/8b1dcc55f5c8582b04aee0b995ae5327-1683590934905/1682363178357-Howtobuildawebsitefromscratch.jpg"width="400px" height="300px" alt="d">
-    <p>Build a website from scratch</p>
-  </div>
- </div>   
+</div>
+</div>
+
+<br><br>
+
+<h1 style="font-size: 60px;">Guides to help you grow</h1>
+<div class="cd3">
+<div class="guide box">
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/0c7c1b07050e6ea2a0901861b48b6264-1658846941284/side%20hustle.jpeg" width="400px" height="300px" alt="a">
+<p>Start a side business</p>
+</div>
+
+<div >
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/687d698a96f4eef875648319685ffeed-1687027332007/1685561103924-12profitableecommercebusinessideasyoucanstarttoday.jpg" width="400px" height="300px"alt="b">
+<p>Ecommerce business Ideas</p>
+</div>
+
+<div >
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/5907f56b0e099c84efe5f480840f43a2-1593446948907/home%20based%20online%20business-fiverr.jpg"width="400px" height="300px" alt="c">
+<p>Start an online business and work from home</p>
+</div>
+
+<div >
+<img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_430,dpr_1.0/v1/attachments/generic_asset/asset/8b1dcc55f5c8582b04aee0b995ae5327-1683590934905/1682363178357-Howtobuildawebsitefromscratch.jpg"width="400px" height="300px" alt="d">
+<p>Build a website from scratch</p>
+</div>
+
+</div>   
  
  <br><br>
- <div class="last">
-  <h1>Freelance services at your <span>fingertips</span></h1>
-      <button class="b3">Jion Fiverr</button>
-  </div>
+
+<div class="last">
+<h1>Freelance services at your <span>fingertips</span></h1>
+<button class="b3">Jion Fiverr</button>
+</div>
+
+<br><br>
+
+<div class="footer">
+<div >
+<h5>Graphics & Design</h5>
+<ul>
+<li>Graphics & Design</li>
+<li>Digital Marketing</li>
+<li>Writing & Translation</li>
+<li>Video & Animation</li>
+<li>Music & Audio</li>
+<li>Programming & Tech</li>
+<li>AI Services</li>
+<li>Consulting</li>
+<li>Data</li>
+<li>Business</li>
+<li>Personal Growth & Hobbies</li>
+<li>Photography</li>
+<li>Finance</li>
+<li>End-to-End Projects</li>
+<li>Service Catalog</li>
+</ul>
+</div>
+
+<div>
+<h5>For Clients</h5>
+<ul>
+<li>How Fiverr Works</li>
+<li>Customer Success Stories</li>
+<li>Trust & Safety</li>
+<li>Quality Guide</li>
+<li>Fiverr Learn - Online Courses</li>
+<li>Fiverr Guides</li>
+<li>Fiverr Answers</li>
+</ul>
+</div>
+
+<div>
+<h5>For Freelancers</h5>
+<ul>
+<li>Become a Fiverr Freelancer</li>
+<li>Become an Agency</li>
+<li>Freelancer Equity Program</li>
+<li>Community Hub</li>
+<li>Forum</li>
+<li>Events</li>
+</ul>
+</div>
+
+<div>
+<h5>Business Solutions</h5>
+<ul>
+<li>Fiverr Pro</li>
+<li>Project Management Service</li>
+<li>Expert Sourcing Service</li>
+<li>ClearVoice - Content Marketing</li>
+<li>Working Not Working - Creative Talent</li>
+<li>AutoDS - Dropshipping Tool</li>
+<li>AI store builder</li>
+<li>Fiverr Logo Maker</li>
+<li>Contact Sales</li>
+<li>Fiverr Go</li>
+</ul>
+</div>
+</div>
 </body>
 </html>
 
